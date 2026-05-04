@@ -1312,8 +1312,8 @@ export default function ScheduleBuilder() {
           </div>
         </div>
 
-        {/* AI status strip — only renders when there's something to show */}
-        {(aiTrace || aiError) && (
+        {/* AI status strip — hidden in Rounds rebrand */}
+        {false && (aiTrace || aiError) && (
           <div className="px-4 py-2 border-b border-gray-100 bg-white">
             {aiError ? (
               <div className="flex items-center justify-between gap-3 px-3 py-2 bg-red-50 border border-red-200 rounded-lg">

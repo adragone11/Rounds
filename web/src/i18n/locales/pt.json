@@ -53,7 +53,7 @@
       "googleButton": "Continuar com Google",
       "footerText": "Nao tem uma conta? ",
       "footerLink": "Cadastre-se",
-      "newToPip": "Novo no Pip? ",
+      "newToPip": "Novo no Rounds? ",
       "signUpLink": "Cadastre-se"
     },
     "signup": {
@@ -77,10 +77,10 @@
       "signInTitle": "Bem-vindo de volta",
       "signInSubtitle": "Entre para continuar gerenciando sua agenda",
       "signUpTitle": "Criar conta",
-      "signUpSubtitle": "Configure sua conta Pip para comecar",
+      "signUpSubtitle": "Configure sua conta Rounds para comecar",
       "continueButton": "Continuar",
       "createButton": "Criar conta",
-      "noAccount": "Novo no Pip? ",
+      "noAccount": "Novo no Rounds? ",
       "hasAccount": "Ja tem uma conta? ",
       "signUpLink": "Cadastre-se",
       "signInLink": "Entrar",
@@ -137,12 +137,12 @@
   },
   "onboarding": {
     "welcome": {
-      "headline": "Bem-vindo ao Pip",
+      "headline": "Bem-vindo ao Rounds",
       "tagline": "O gerenciador de agenda sem friccao, feito para voce realmente usar.",
       "getStarted": "Comecar",
       "signIn": "Entrar",
       "alreadyHaveAccount": "Ja tem uma conta? ",
-      "newToPip": "Novo no Pip? ",
+      "newToPip": "Novo no Rounds? ",
       "panel1Title": "Seu dia inteiro, pronto",
       "panel1Subtitle": "Trabalhos, clientes e preços — uma tela",
       "panel2Title": "Clientes, organizados",
@@ -207,7 +207,7 @@
       "continue": "Continuar"
     },
     "referralSource": {
-      "headline": "Como voce encontrou o Pip?",
+      "headline": "Como voce encontrou o Rounds?",
       "subtitle": "Isso nos ajuda a alcancar mais pessoas como voce.",
       "options": {
         "instagram": "Instagram",
@@ -236,7 +236,7 @@
     },
     "painQuestion": {
       "headline": "O que toma muito do seu tempo?",
-      "subtitle": "Vamos mostrar como o Pip pode ajudar.",
+      "subtitle": "Vamos mostrar como o Rounds pode ajudar.",
       "options": {
         "driving": "Dirigir entre trabalhos",
         "communication": "Comunicar com clientes",
@@ -288,14 +288,14 @@
       },
       "paperwork": {
         "headline": "Organizado e Sem Estresse",
-        "subtitle": "Enquanto o faturamento está chegando, o Pip ajuda você a rastrear trabalhos, preços e ganhos hoje.",
+        "subtitle": "Enquanto o faturamento está chegando, o Rounds ajuda você a rastrear trabalhos, preços e ganhos hoje.",
         "feature1": "Rastreie preços e ganhos de trabalhos",
         "feature2": "Veja totais semanais e mensais",
         "feature3": "Todo o histórico em um só lugar"
       },
       "other": {
         "headline": "Sua Agenda, Simplificada",
-        "subtitle": "Pip ajuda prestadores a se manterem organizados com fácil rastreamento de trabalhos e clientes.",
+        "subtitle": "Rounds ajuda prestadores a se manterem organizados com fácil rastreamento de trabalhos e clientes.",
         "feature1": "Entrada rápida de trabalhos em segundos",
         "feature2": "Todos os seus clientes organizados",
         "feature3": "Visão de calendário da sua agenda"
@@ -323,19 +323,19 @@
       }
     },
     "showcaseTransition": {
-      "headline": "Essa e uma forma que o Pip ajuda",
+      "headline": "Essa e uma forma que o Rounds ajuda",
       "subtitle": "Aqui esta a imagem completa do que voce pode fazer.",
       "continue": "Ver Mais"
     },
     "statistic": {
       "withPip": "Com",
-      "pipName": "Pip",
+      "pipName": "Rounds",
       "headline": "Economize",
       "headlineHighlight": "22+ horas todo mes",
       "subtitle": "em papelada e tarefas administrativas",
       "chartTitle": "Horas gastas em agendamento por mes",
       "manualLabel": "Agendamento manual",
-      "pipLabel": "Com Pip",
+      "pipLabel": "Com Rounds",
       "savings": "Economize 22+ horas/mes",
       "source": "Baseado em pesquisa da industria de servicos de campo",
       "continue": "Continuar"
@@ -461,7 +461,7 @@
     },
     "showcaseScheduleGen": {
       "headline": "Crie Seu Horario",
-      "subtitle": "Adicione seus clientes e o Pip agrupa por localizacao — menos deslocamento, mais trabalhos.",
+      "subtitle": "Adicione seus clientes e o Rounds agrupa por localizacao — menos deslocamento, mais trabalhos.",
       "cardTitle": "Horario Semanal",
       "groupedLabel": "Mesma cor = mesma area, menos deslocamento",
       "next": "Proximo"
@@ -484,12 +484,12 @@
     },
     "address": {
       "headline": "De onde você sai?",
-      "subtitle": "Sua casa ou escritório — o Pip usa isso para planejar rotas eficientes entre trabalhos.",
+      "subtitle": "Sua casa ou escritório — o Rounds usa isso para planejar rotas eficientes entre trabalhos.",
       "placeholder": "Digite seu endereço inicial",
       "save": "Salvar",
       "skip": "Pular por enquanto",
       "trustOptimize": "Otimiza sua rota diária",
-      "trustOptimizeDesc": "O Pip planeja o caminho mais rápido entre todos os seus trabalhos",
+      "trustOptimizeDesc": "O Rounds planeja o caminho mais rápido entre todos os seus trabalhos",
       "trustPrivate": "Seu endereço é privado",
       "trustPrivateDesc": "Nunca compartilhamos sua localização com clientes",
       "trustChange": "Mude quando quiser",
@@ -505,12 +505,12 @@
       "continue": "Continuar",
       "importMore": "Importar Mais",
       "successMessage": "{{count}} clientes importados!",
-      "existingMessage": "Você tem {{count}} clientes no Pip"
+      "existingMessage": "Você tem {{count}} clientes no Rounds"
     },
     "complete": {
       "headline": "Tudo pronto!",
       "headlineWithName": "Tudo pronto, {{name}}!",
-      "subtitle": "Seu espaco de trabalho esta pronto. Veja o que voce pode fazer com o Pip:",
+      "subtitle": "Seu espaco de trabalho esta pronto. Veja o que voce pode fazer com o Rounds:",
       "feature1": "Criar e gerenciar trabalhos",
       "feature2": "Acompanhar seus clientes",
       "feature3": "Ver seu calendario",
@@ -1019,7 +1019,7 @@
       "messaging": "Mensagens",
       "language": "Idioma",
       "supportLegal": "Suporte e Legal",
-      "pipPlus": "Pip+",
+      "pipPlus": "Rounds",
       "about": "Sobre",
       "dangerZone": "Zona de Perigo"
     },
@@ -1070,10 +1070,10 @@
     "about": {
       "version": "Versao",
       "versionNumber": "1.0.2",
-      "title": "Sobre o Pip",
+      "title": "Sobre o Rounds",
       "done": "Concluído",
       "aboutHeader": "Sobre",
-      "aboutPip": "Sobre o Pip"
+      "aboutPip": "Sobre o Rounds"
     },
     "profile": {
       "title": "Editar Perfil",
@@ -1095,7 +1095,7 @@
       "scheduleBuilder": "Planejador",
       "scheduleBuilderDesc": "Reorganize sua agenda quando quiser",
       "openScheduleBuilder": "Abrir planejador",
-      "upgradeButton": "Atualizar para Pip+",
+      "upgradeButton": "Atualizar para Rounds",
       "subscription": "Assinatura",
       "manageOrUpgrade": "Gerenciar ou atualizar",
       "managePlan": "Gerenciar seu plano"
@@ -1139,15 +1139,15 @@
       "confirm": "Sair"
     },
     "pipPlus": {
-      "upgrade": "Atualizar para Pip+",
-      "active": "Status do Pip+",
+      "upgrade": "Atualizar para Rounds",
+      "active": "Status do Rounds",
       "subscribed": "Ativo",
       "scheduleBuilder": "Criador de Horários"
     },
     "restorePurchases": {
       "button": "Restaurar Compras",
       "successTitle": "Restaurado!",
-      "successMessage": "Sua assinatura Pip+ foi restaurada.",
+      "successMessage": "Sua assinatura Rounds foi restaurada.",
       "noPurchasesTitle": "Nenhuma Compra Encontrada",
       "noPurchasesMessage": "Não encontramos compras anteriores para restaurar.",
       "failed": "Falha ao restaurar compras. Por favor, tente novamente."
@@ -1211,17 +1211,23 @@
     "saving": "Salvando..."
   },
   "subscription": {
-    "manageSubscription": "Gerenciar Assinatura",
-    "freeTrial": "Teste Gratuito",
-    "monthlyPlan": "Pip Mensal",
-    "yearlyPlan": "Pip Anual",
-    "activePlan": "Pip Ativo",
-    "trialEnds": "Teste termina {{date}}",
-    "renewsOn": "Renova {{date}}",
-    "expiresOn": "Expira {{date}}",
-    "trialActive": "Teste Ativo",
-    "manageInAppStore": "Gerenciar na App Store",
-    "manageNote": "As assinaturas sao gerenciadas atraves do seu Apple ID. Toque acima para alterar ou cancelar seu plano."
+    "title": "Assinatura",
+    "free": "Plano Grátis",
+    "plus": "Rounds",
+    "freeStatus": "Recursos limitados",
+    "plusActive": "Assinatura ativa",
+    "activeBadge": "Ativa",
+    "manage": "Gerenciar na App Store",
+    "upgradeOnMobile": "Faça upgrade no app Rounds",
+    "syncsToWeb": "Sua assinatura sincroniza com a web automaticamente.",
+    "includesTitle": "O que você ganha",
+    "unlockTitle": "Desbloqueie com o Rounds",
+    "renewalTitle": "Renovação e plano",
+    "renewalNote": "Detalhes do plano, data de renovação e cobrança estão na sua conta da App Store. Use o botão para gerenciar ou cancelar.",
+    "benefitBuilder": "Construtor de Agenda",
+    "benefitSmart": "Encaixe Inteligente",
+    "benefitTemplates": "Modelos de mensagem personalizados, sem marca d'água",
+    "benefitRoute": "Otimização diária de rotas"
   },
   "components": {
     "jobCard": {
@@ -1307,7 +1313,7 @@
     },
     "feedback": {
       "title": "Enviar Feedback",
-      "subtitle": "Ajude-nos a melhorar o Pip! Compartilhe suas ideias, reporte bugs, ou nos conte o que voce acha.",
+      "subtitle": "Ajude-nos a melhorar o Rounds! Compartilhe suas ideias, reporte bugs, ou nos conte o que voce acha.",
       "placeholder": "O que voce esta pensando?",
       "send": "Enviar",
       "emptyMessage": "Por favor escreva uma mensagem",
@@ -1341,11 +1347,11 @@
     },
     "trial": {
       "weekLeftTitle": "Falta 1 semana!",
-      "weekLeftBody": "Sua avaliação gratuita do Pip+ tem 1 semana restante. Continue adicionando clientes!",
+      "weekLeftBody": "Sua avaliação gratuita do Rounds tem 1 semana restante. Continue adicionando clientes!",
       "dayLeftTitle": "A avaliação termina amanhã",
-      "dayLeftBody": "Sua avaliação do Pip+ termina amanhã. Atualize agora para continuar adicionando clientes e trabalhos!",
+      "dayLeftBody": "Sua avaliação do Rounds termina amanhã. Atualize agora para continuar adicionando clientes e trabalhos!",
       "expiredTitle": "Avaliação encerrada",
-      "expiredBody": "Sua avaliação gratuita terminou. Atualize para o Pip+ para continuar adicionando clientes e trabalhos."
+      "expiredBody": "Sua avaliação gratuita terminou. Atualize para o Rounds para continuar adicionando clientes e trabalhos."
     }
   },
   "alerts": {
@@ -1528,9 +1534,9 @@
     },
     "trial": {
       "headline": "Como Funciona Seu Teste Gratuito",
-      "subtitle": "Experimente o Pip+ grátis por 14 dias, cancele a qualquer momento",
+      "subtitle": "Experimente o Rounds grátis por 14 dias, cancele a qualquer momento",
       "step1Title": "Comece seu teste gratuito hoje",
-      "step1Desc": "Obtenha acesso instantâneo a todos os recursos do Pip+",
+      "step1Desc": "Obtenha acesso instantâneo a todos os recursos do Rounds",
       "step2Title": "Receba um lembrete antes do fim",
       "step2Desc": "Vamos lembrá-lo antes do seu teste terminar",
       "step3Title": "Em 14 Dias",
@@ -1539,14 +1545,14 @@
       "cancelNote": "Cancele a qualquer momento antes para evitar cobranças"
     },
     "paywall": {
-      "title": "Pip+",
-      "subtitle": "Obtenha a experiência completa do Pip+",
+      "title": "Rounds",
+      "subtitle": "Obtenha a experiência completa do Rounds",
       "ctaHeadline": "Faça menos, ganhe mais,",
       "ctaHeadline2": "com",
       "trialSubhead": "Cancele quando quiser",
       "subscribeNow": "Assinar",
       "trialDay0": "Hoje",
-      "trialDay0Desc": "Acesso grátis ao Pip+",
+      "trialDay0Desc": "Acesso grátis ao Rounds",
       "trialDay5": "Dia 5",
       "trialDay5Desc": "Lembrete antes da cobrança",
       "trialDay7": "Dia 7",
@@ -1562,10 +1568,10 @@
       "feature2": "Otimizador de Rota Diária",
       "feature2Desc": "Obtenha a melhor ordem para os trabalhos de hoje. Dirija menos, ganhe mais.",
       "feature3": "Posicionamento Inteligente",
-      "feature3Desc": "Pip escolhe o melhor dia para novos trabalhos com base na sua localização.",
+      "feature3Desc": "Rounds escolhe o melhor dia para novos trabalhos com base na sua localização.",
       "tagline": "Horários mais inteligentes. Rotas mais curtas. Mais tempo para o que importa.",
       "stat1Title": "Menos quilômetros entre trabalhos",
-      "stat1Desc": "Pip encontra o caminho mais curto no seu dia",
+      "stat1Desc": "Rounds encontra o caminho mais curto no seu dia",
       "stat2Title": "Chega de planejar na noite anterior",
       "stat2Desc": "Sua semana se monta sozinha com o que faz sentido",
       "bestValue": "MELHOR VALOR",
@@ -1585,25 +1591,25 @@
       "termsLink": "Termos de Serviço",
       "purchaseFailed": "Falha ao concluir a compra. Por favor, tente novamente.",
       "restored": "Restaurado!",
-      "restoredMessage": "Sua assinatura Pip+ foi restaurada.",
+      "restoredMessage": "Sua assinatura Rounds foi restaurada.",
       "noPurchases": "Nenhuma Compra Encontrada",
       "noPurchasesMessage": "Não encontramos compras anteriores para restaurar.",
       "restoreFailed": "Falha ao restaurar compras. Por favor, tente novamente."
     },
     "hardPaywall": {
       "title": "Sua Assinatura Terminou",
-      "subtitle": "Assine para continuar usando o Pip",
+      "subtitle": "Assine para continuar usando o Rounds",
       "feature1": "Clientes e trabalhos ilimitados",
       "feature2": "Trabalhos recorrentes ilimitados",
       "feature3": "Acesso completo ao calendário",
       "feature4": "Lembretes e notificações de trabalhos",
-      "continueButton": "Continuar com Pip",
+      "continueButton": "Continuar com Rounds",
       "processing": "Processando...",
       "restore": "Restaurar Compras"
     },
     "welcome": {
       "headline": "Você está pronto para crescer.",
-      "subtitle": "Pip+ está desbloqueado. Todas as ferramentas que você precisa para organizar sua semana e recuperar seu tempo.",
+      "subtitle": "Rounds está desbloqueado. Todas as ferramentas que você precisa para organizar sua semana e recuperar seu tempo.",
       "nowUnlocked": "DESBLOQUEADO",
       "featureUnlimitedClients": "Clientes Ilimitados",
       "featureUnlimitedJobs": "Trabalhos Ilimitados",
@@ -1614,7 +1620,7 @@
       "trustSubtitle": "Gerencie ou cancele pelas configurações do seu dispositivo. Seus dados são sempre seus.",
       "whatNext": "O que você gostaria de fazer primeiro?",
       "actionBuildTitle": "Criar meu horário",
-      "actionBuildSubtitle": "Organize suas semanas e deixe o Pip otimizar",
+      "actionBuildSubtitle": "Organize suas semanas e deixe o Rounds otimizar",
       "actionClientsTitle": "Adicionar meus clientes",
       "actionClientsSubtitle": "Importe ou adicione sua lista de clientes",
       "actionExploreTitle": "Explorar por conta própria",
@@ -1645,34 +1651,34 @@
       "basedOn": "Baseado na sua lista atual de clientes. Imagine com",
       "or": "ou",
       "clients": "clientes.",
-      "unlockPipPlus": "Desbloquear Pip+",
+      "unlockPipPlus": "Desbloquear Rounds",
       "clientFallback": "Cliente {{number}}"
     },
     "soft": {
       "headline": "Quando você estiver pronto",
-      "body": "Sem pressa. Seus clientes não vão a lugar nenhum. Quando estiver pronto para crescer, o Pip+ está aqui.",
+      "body": "Sem pressa. Seus clientes não vão a lugar nenhum. Quando estiver pronto para crescer, o Rounds está aqui.",
       "nudgeTitle": "Menos quilômetros, mais trabalhos feitos",
       "nudgeDesc": "Rotas inteligentes encontram o caminho mais curto no seu dia",
-      "learnMore": "Saber mais sobre Pip+",
+      "learnMore": "Saber mais sobre Rounds",
       "continueFree": "Continuar com plano gratuito"
     }
   },
   "contactPicker": {
     "partialImport": "{{imported}} de {{total}} contatos importados — limite do plano gratuito atingido",
-    "limitReached": "Limite do plano gratuito atingido. Atualize para Pip+ para clientes ilimitados.",
+    "limitReached": "Limite do plano gratuito atingido. Atualize para Rounds para clientes ilimitados.",
     "clientLimitTitle": "Limite de Clientes Atingido",
-    "clientLimitMessage": "Você atingiu o limite de {{limit}} clientes do plano gratuito. Atualize para Pip+ para clientes ilimitados.",
+    "clientLimitMessage": "Você atingiu o limite de {{limit}} clientes do plano gratuito. Atualize para Rounds para clientes ilimitados.",
     "freePlanLimitTitle": "Limite do Plano Gratuito",
     "freePlanLimitMax": "O plano gratuito permite até {{limit}} clientes. Você selecionou o máximo.",
     "freePlanLimitPartial": "Você já tem {{existing}} cliente(s). O plano gratuito permite {{limit}} no total, então pode importar até {{remaining}}.",
     "selectionLimitTitle": "Limite de Seleção",
     "selectionLimitMessage": "Você pode importar até {{limit}} contatos por vez.",
-    "bannerLimitReached": "Você atingiu o limite de {{limit}} clientes do plano gratuito. Atualize para Pip+ para ilimitados.",
+    "bannerLimitReached": "Você atingiu o limite de {{limit}} clientes do plano gratuito. Atualize para Rounds para ilimitados.",
     "bannerSlotsRemaining": "Plano gratuito: {{limit}} clientes no total — {{remaining}} vaga(s) restante(s).",
     "loadError": "Falha ao carregar contatos",
     "noSelection": "Sem seleção",
     "noSelectionMessage": "Selecione pelo menos um contato para importar.",
-    "freeLimitImportMessage": "O plano gratuito permite {{limit}} clientes no total. Você pode importar {{remaining}} — desmarque alguns contatos ou faça upgrade para Pip+.",
+    "freeLimitImportMessage": "O plano gratuito permite {{limit}} clientes no total. Você pode importar {{remaining}} — desmarque alguns contatos ou faça upgrade para Rounds.",
     "prepareError": "Algo deu errado. Tente novamente.",
     "importErrorTitle": "Erro de importação",
     "importErrorMessage": "Falha ao importar alguns clientes. Tente novamente."
@@ -1917,7 +1923,7 @@
   "contactPickerExtra": {
     "discardTitle": "Descartar Seleção?",
     "discardMessage": "Você tem {{count}} contato{{plural}} selecionado. Descartar e voltar?",
-    "alreadyInPip": "Já está no Pip",
+    "alreadyInPip": "Já está no Rounds",
     "importConfirmTitle": "Importar {{count}} Cliente{{plural}}?",
     "importConfirmMessage": "Isso adicionará {{count}} cliente{{plural}} à sua conta.",
     "missingAddressTitle": "Endereços Faltando",
@@ -1939,7 +1945,7 @@
     "importButtonLabel": "Importar {{count}} Cliente",
     "importButtonLabelPlural": "Importar {{count}} Clientes",
     "importButtonMissing": "Importar {{count}} Clientes ({{missing}} sem endereço)",
-    "permissionText": "Para importar clientes dos seus contatos, permita que o Pip acesse seus contatos nas Configurações.",
+    "permissionText": "Para importar clientes dos seus contatos, permita que o Rounds acesse seus contatos nas Configurações.",
     "importAction": "Importar"
   },
   "avatar": {
@@ -1970,7 +1976,7 @@
     "noTemplate": "Nenhum modelo definido",
     "modified": "Modificado",
     "typePlaceholder": "Digite sua mensagem...",
-    "upgradeToCustomize": "Atualize para Pip+ para personalizar",
+    "upgradeToCustomize": "Atualize para Rounds para personalizar",
     "newTemplate": "Novo Modelo",
     "editTemplate": "Editar Modelo",
     "nameLabel": "Nome",
@@ -1988,7 +1994,7 @@
     "maxReached": "Limite de 10 modelos atingido",
     "nameRequired": "O nome é obrigatório",
     "nameExists": "Você já tem um modelo com esse nome",
-    "plusOnly": "Pip+",
+    "plusOnly": "Rounds",
     "upgradeForCustom": "Atualize para personalizar"
   },
   "calendarMap": {
@@ -2101,14 +2107,14 @@
   "introOffer": {
     "badge": "Oferta Única",
     "headline": "Garanta 50% de desconto",
-    "subhead": "Este preço não será oferecido novamente. Os primeiros apoiadores ganham Pip+ com preço fixo — para sempre.",
+    "subhead": "Este preço não será oferecido novamente. Os primeiros apoiadores ganham Rounds com preço fixo — para sempre.",
     "yearly": "Anual",
     "monthly": "Mensal",
     "bestDeal": "ECONOMIZE 50%",
     "includes1": "Clientes e trabalhos ilimitados",
     "includes2": "Planejador de agenda e otimização de rotas",
-    "includes3": "Todos os futuros recursos do Pip+ incluídos",
-    "cta": "Desbloquear Pip+",
+    "includes3": "Todos os futuros recursos do Rounds incluídos",
+    "cta": "Desbloquear Rounds",
     "processing": "Processando...",
     "dismiss": "Não obrigado, pagarei o preço cheio depois"
   },
@@ -2136,12 +2142,12 @@
   "update": {
     "required": {
       "title": "Atualizacao Necessaria",
-      "body": "Uma nova versao do Pip esta disponivel com mudancas importantes. Por favor atualize para continuar.",
+      "body": "Uma nova versao do Rounds esta disponivel com mudancas importantes. Por favor atualize para continuar.",
       "button": "Atualizar Agora"
     },
     "available": {
       "title": "Atualizacao Disponivel",
-      "body": "Uma nova versao do Pip esta disponivel com melhorias.",
+      "body": "Uma nova versao do Rounds esta disponivel com melhorias.",
       "updateButton": "Atualizar Agora",
       "laterButton": "Depois"
     }
@@ -2230,7 +2236,7 @@
     "blockedDays": "Dias bloqueados",
     "blockedDaysHintPlus": "Smart Placement não sugerirá esses dias para {{name}}",
     "blockedDaysHintPlusGeneric": "Smart Placement não sugerirá esses dias para este cliente",
-    "blockedDaysHintFree": "Salvo para depois — ativa com Pip+ Smart Placement",
+    "blockedDaysHintFree": "Salvo para depois — ativa com Rounds Smart Placement",
     "clientAdded": "Cliente adicionado",
     "addFailed": "Não foi possível adicionar o cliente",
     "sort": {
@@ -2417,32 +2423,13 @@
       "tagline": "Central de Comando de Agenda",
       "signInWithEmail": "Entrar com email",
       "signingIn": "Entrando...",
-      "footerHint": "Entre para sincronizar clientes do app Pip"
+      "footerHint": "Entre para sincronizar clientes do app Rounds"
     },
     "paywall": {
       "scheduleBuilder": "Construtor de Agenda",
       "smartPlacement": "Encaixe Inteligente",
-      "upgradeOnMobile": "Faça upgrade no app Pip para desbloquear isto na web. Sua assinatura sincroniza automaticamente.",
+      "upgradeOnMobile": "Faça upgrade no app Rounds para desbloquear isto na web. Sua assinatura sincroniza automaticamente.",
       "subscriptionSyncs": "Assinaturas gerenciadas na App Store. A web reflete seu acesso atual."
     }
-  },
-  "subscription": {
-    "title": "Assinatura",
-    "free": "Plano Grátis",
-    "plus": "Pip+",
-    "freeStatus": "Recursos limitados",
-    "plusActive": "Assinatura ativa",
-    "activeBadge": "Ativa",
-    "manage": "Gerenciar na App Store",
-    "upgradeOnMobile": "Faça upgrade no app Pip",
-    "syncsToWeb": "Sua assinatura sincroniza com a web automaticamente.",
-    "includesTitle": "O que você ganha",
-    "unlockTitle": "Desbloqueie com o Pip+",
-    "renewalTitle": "Renovação e plano",
-    "renewalNote": "Detalhes do plano, data de renovação e cobrança estão na sua conta da App Store. Use o botão para gerenciar ou cancelar.",
-    "benefitBuilder": "Construtor de Agenda",
-    "benefitSmart": "Encaixe Inteligente",
-    "benefitTemplates": "Modelos de mensagem personalizados, sem marca d'água",
-    "benefitRoute": "Otimização diária de rotas"
   }
 }

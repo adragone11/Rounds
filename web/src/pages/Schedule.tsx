@@ -840,12 +840,9 @@ export default function Schedule() {
               onClick={() => navigate('/schedule/builder')}
               className="px-3 py-1.5 text-[10px] font-bold text-white rounded-lg transition-all shadow-sm flex items-center gap-1.5"
               style={{ backgroundColor: '#4A7CFF' }}
-              title={isPlus ? undefined : t('web.paywall.upgradeOnMobile') || 'Pip+ feature — upgrade in the mobile app'}
+              title={undefined}
             >
               {t('scheduleBuilder.title')}
-              {!isPlus && (
-                <span className="text-[8px] font-bold uppercase tracking-wider px-1 py-0.5 rounded bg-white/25">Pip+</span>
-              )}
             </button>
           </div>
         </div>
@@ -1061,22 +1058,18 @@ export default function Schedule() {
               clients in the Place flow. Add Job has its own copy of this
               panel inside AddJobPanel (see SmartPlacementSuggestions),
               since this sidebar is unmounted during Add Job. */}
-          {selectedClientId && isSelectedUnplaced && !isPlus && (
+          {false && selectedClientId && isSelectedUnplaced && !isPlus && (
             <div className="p-2.5 border-b border-gray-200">
               <div className="rounded-xl border border-blue-200 bg-blue-50/60 p-3">
                 <div className="flex items-start gap-2">
-                  <span className="inline-block mt-0.5 text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-blue-600 text-white">Pip+</span>
                   <div className="flex-1 min-w-0">
                     <p className="text-[11px] font-semibold text-gray-900">{t('schedule.smartPlacement') || 'Smart Placement'}</p>
-                    <p className="text-[10px] text-gray-500 mt-0.5">
-                      {t('web.paywall.upgradeOnMobile') || 'Upgrade in the Pip mobile app to unlock this on web.'}
-                    </p>
                   </div>
                 </div>
               </div>
             </div>
           )}
-          {selectedClientId && isSelectedUnplaced && isPlus && (() => {
+          {false && selectedClientId && isSelectedUnplaced && isPlus && (() => {
             const client = store.clients.find(c => c.id === selectedClientId)
             if (!client) return null
             const placeOnDate = (freq: Frequency, date: string) => {

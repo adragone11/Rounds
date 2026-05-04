@@ -53,7 +53,7 @@
       "googleButton": "Continue with Google",
       "footerText": "Don't have an account? ",
       "footerLink": "Sign Up",
-      "newToPip": "New to Pip? ",
+      "newToPip": "New to Rounds? ",
       "signUpLink": "Sign up"
     },
     "signup": {
@@ -77,10 +77,10 @@
       "signInTitle": "Welcome Back",
       "signInSubtitle": "Sign in to continue managing your schedule",
       "signUpTitle": "Create Account",
-      "signUpSubtitle": "Set up your Pip account to get started",
+      "signUpSubtitle": "Set up your Rounds account to get started",
       "continueButton": "Continue",
       "createButton": "Create Account",
-      "noAccount": "New to Pip? ",
+      "noAccount": "New to Rounds? ",
       "hasAccount": "Already have an account? ",
       "signUpLink": "Sign up",
       "signInLink": "Sign in",
@@ -137,12 +137,12 @@
   },
   "onboarding": {
     "welcome": {
-      "headline": "Welcome to Pip",
+      "headline": "Welcome to Rounds",
       "tagline": "The frictionless schedule manager, built so you actually use it.",
       "getStarted": "Get Started",
       "signIn": "Sign in",
       "alreadyHaveAccount": "Already have an account? ",
-      "newToPip": "New to Pip? ",
+      "newToPip": "New to Rounds? ",
       "panel1Title": "Your whole day, ready",
       "panel1Subtitle": "Jobs, clients, and prices — one screen",
       "panel2Title": "Clients, organized",
@@ -207,7 +207,7 @@
       "continue": "Continue"
     },
     "referralSource": {
-      "headline": "How did you find Pip?",
+      "headline": "How did you find Rounds?",
       "subtitle": "This helps us reach more people like you.",
       "options": {
         "instagram": "Instagram",
@@ -236,7 +236,7 @@
     },
     "painQuestion": {
       "headline": "What takes up too much of your time?",
-      "subtitle": "We'll show you how Pip can help.",
+      "subtitle": "We'll show you how Rounds can help.",
       "options": {
         "driving": "Driving between jobs",
         "communication": "Communicating with clients",
@@ -289,14 +289,14 @@
       },
       "paperwork": {
         "headline": "Stay Organized, Stress Less",
-        "subtitle": "While invoicing is coming soon, Pip helps you track jobs, prices, and earnings today.",
+        "subtitle": "While invoicing is coming soon, Rounds helps you track jobs, prices, and earnings today.",
         "feature1": "Track job prices and earnings",
         "feature2": "See weekly and monthly totals",
         "feature3": "All job history in one place"
       },
       "other": {
         "headline": "Your Schedule, Simplified",
-        "subtitle": "Pip helps contractors stay organized with easy job tracking, client management, and reminders.",
+        "subtitle": "Rounds helps contractors stay organized with easy job tracking, client management, and reminders.",
         "feature1": "Quick job entry in seconds",
         "feature2": "All your clients organized",
         "feature3": "Calendar view of your schedule"
@@ -324,19 +324,19 @@
       }
     },
     "showcaseTransition": {
-      "headline": "That's one way Pip helps",
+      "headline": "That's one way Rounds helps",
       "subtitle": "Here's the full picture of what you can do.",
       "continue": "See More"
     },
     "statistic": {
       "withPip": "With",
-      "pipName": "Pip",
+      "pipName": "Rounds",
       "headline": "Save",
       "headlineHighlight": "22+ hours every month",
       "subtitle": "on paperwork and admin tasks",
       "chartTitle": "Hours spent on scheduling per month",
       "manualLabel": "Manual scheduling",
-      "pipLabel": "With Pip",
+      "pipLabel": "With Rounds",
       "savings": "Save 22+ hours/month",
       "source": "Based on field service management industry research",
       "continue": "Continue"
@@ -462,7 +462,7 @@
     },
     "showcaseScheduleGen": {
       "headline": "Auto-Build Your Schedule",
-      "subtitle": "Add your clients and Pip groups them by location — less driving, more jobs done.",
+      "subtitle": "Add your clients and Rounds groups them by location — less driving, more jobs done.",
       "cardTitle": "Weekly Schedule",
       "groupedLabel": "Same color = same area, less driving",
       "next": "Next"
@@ -485,12 +485,12 @@
     },
     "address": {
       "headline": "Where do you start?",
-      "subtitle": "Your home or office — Pip uses this to plan efficient routes between jobs.",
+      "subtitle": "Your home or office — Rounds uses this to plan efficient routes between jobs.",
       "placeholder": "Enter your starting address",
       "save": "Save",
       "skip": "Skip for now",
       "trustOptimize": "Optimizes your daily route",
-      "trustOptimizeDesc": "Pip plans the fastest path between all your jobs",
+      "trustOptimizeDesc": "Rounds plans the fastest path between all your jobs",
       "trustPrivate": "Your address stays private",
       "trustPrivateDesc": "We never share your location with clients",
       "trustChange": "Change it anytime",
@@ -506,12 +506,12 @@
       "continue": "Continue",
       "importMore": "Import More",
       "successMessage": "{{count}} clients imported!",
-      "existingMessage": "You have {{count}} clients in Pip"
+      "existingMessage": "You have {{count}} clients in Rounds"
     },
     "complete": {
       "headline": "You're all set!",
       "headlineWithName": "You're all set, {{name}}!",
-      "subtitle": "Your workspace is ready. Here's what you can do with Pip:",
+      "subtitle": "Your workspace is ready. Here's what you can do with Rounds:",
       "feature1": "Create and manage jobs",
       "feature2": "Track your clients",
       "feature3": "View your calendar",
@@ -1020,7 +1020,7 @@
       "messaging": "Messaging",
       "language": "Language",
       "supportLegal": "Support & Legal",
-      "pipPlus": "Pip+",
+      "pipPlus": "Rounds",
       "about": "About",
       "dangerZone": "Danger Zone"
     },
@@ -1071,10 +1071,10 @@
     "about": {
       "version": "Version",
       "versionNumber": "1.0.2",
-      "title": "About Pip",
+      "title": "About Rounds",
       "done": "Done",
       "aboutHeader": "About",
-      "aboutPip": "About Pip"
+      "aboutPip": "About Rounds"
     },
     "profile": {
       "title": "Edit Profile",
@@ -1096,7 +1096,7 @@
       "scheduleBuilder": "Schedule builder",
       "scheduleBuilderDesc": "Rework your schedule anytime",
       "openScheduleBuilder": "Open Schedule Builder",
-      "upgradeButton": "Upgrade to Pip+",
+      "upgradeButton": "Upgrade to Rounds",
       "subscription": "Subscription",
       "manageOrUpgrade": "Manage or upgrade",
       "managePlan": "Manage your plan"
@@ -1140,15 +1140,15 @@
       "confirm": "Sign Out"
     },
     "pipPlus": {
-      "upgrade": "Upgrade to Pip+",
-      "active": "Pip+ Status",
+      "upgrade": "Upgrade to Rounds",
+      "active": "Rounds Status",
       "subscribed": "Active",
       "scheduleBuilder": "Schedule Builder"
     },
     "restorePurchases": {
       "button": "Restore Purchases",
       "successTitle": "Restored!",
-      "successMessage": "Your Pip+ subscription has been restored.",
+      "successMessage": "Your Rounds subscription has been restored.",
       "noPurchasesTitle": "No Purchases Found",
       "noPurchasesMessage": "We couldn't find any previous purchases to restore.",
       "failed": "Failed to restore purchases. Please try again."
@@ -1212,17 +1212,26 @@
     "saving": "Saving..."
   },
   "subscription": {
-    "manageSubscription": "Manage Subscription",
-    "freeTrial": "Free Trial",
-    "monthlyPlan": "Pip Monthly",
-    "yearlyPlan": "Pip Yearly",
-    "activePlan": "Pip Active",
-    "trialEnds": "Trial ends {{date}}",
-    "renewsOn": "Renews {{date}}",
-    "expiresOn": "Expires {{date}}",
-    "trialActive": "Trial Active",
-    "manageInAppStore": "Manage in App Store",
-    "manageNote": "Subscriptions are managed through your Apple ID settings. Tap above to change or cancel your plan."
+    "title": "Subscription",
+    "free": "Free Plan",
+    "plus": "Rounds",
+    "freeStatus": "Limited features",
+    "plusActive": "Subscription active",
+    "activeBadge": "Active",
+    "manage": "Manage in App Store",
+    "upgradeOnMobile": "Upgrade in the Rounds mobile app",
+    "syncsToWeb": "Your subscription syncs to web automatically once active.",
+    "manageTitle": "Manage Subscription",
+    "restore": "Restore Purchases",
+    "appleNote": "Plan details, renewal date, and billing live in your Apple ID settings. Use the button above to manage or cancel.",
+    "includesTitle": "What you get",
+    "unlockTitle": "Unlock with Rounds",
+    "renewalTitle": "Renewal & Plan",
+    "renewalNote": "Plan details, renewal date, and billing live in your App Store account. Use the button below to manage or cancel.",
+    "benefitBuilder": "Schedule Builder",
+    "benefitSmart": "Smart Placement",
+    "benefitTemplates": "Custom message templates, no watermark",
+    "benefitRoute": "Daily route optimization"
   },
   "components": {
     "jobCard": {
@@ -1308,7 +1317,7 @@
     },
     "feedback": {
       "title": "Send Feedback",
-      "subtitle": "Help us improve Pip! Share your ideas, report bugs, or let us know what you think.",
+      "subtitle": "Help us improve Rounds! Share your ideas, report bugs, or let us know what you think.",
       "placeholder": "What's on your mind?",
       "send": "Send Feedback",
       "emptyMessage": "Please enter a message",
@@ -1342,11 +1351,11 @@
     },
     "trial": {
       "weekLeftTitle": "1 Week Left!",
-      "weekLeftBody": "Your Pip+ free trial has 1 week left. Keep building your client list!",
+      "weekLeftBody": "Your Rounds free trial has 1 week left. Keep building your client list!",
       "dayLeftTitle": "Trial Ends Tomorrow",
-      "dayLeftBody": "Your Pip+ trial ends tomorrow. Upgrade now to keep adding clients and jobs!",
+      "dayLeftBody": "Your Rounds trial ends tomorrow. Upgrade now to keep adding clients and jobs!",
       "expiredTitle": "Trial Ended",
-      "expiredBody": "Your free trial has ended. Upgrade to Pip+ to continue adding clients and jobs."
+      "expiredBody": "Your free trial has ended. Upgrade to Rounds to continue adding clients and jobs."
     }
   },
   "alerts": {
@@ -1519,18 +1528,18 @@
     },
     "unlock": {
       "headline": "Upgrade to",
-      "subtitle": "Unlock the full power of Pip",
+      "subtitle": "Unlock the full power of Rounds",
       "learnMore": "Learn More"
     },
     "paywall": {
-      "title": "Pip+",
-      "subtitle": "Get the full Pip+ experience",
+      "title": "Rounds",
+      "subtitle": "Get the full Rounds experience",
       "ctaHeadline": "Do less, earn more,",
       "ctaHeadline2": "with",
       "trialSubhead": "Cancel anytime",
       "subscribeNow": "Subscribe",
       "trialDay0": "Today",
-      "trialDay0Desc": "Free access to Pip+",
+      "trialDay0Desc": "Free access to Rounds",
       "trialDay5": "Day 5",
       "trialDay5Desc": "Reminder before charge",
       "trialDay7": "Day 7",
@@ -1546,10 +1555,10 @@
       "feature2": "Daily Route Optimizer",
       "feature2Desc": "Get the fastest order for today's jobs. Drive less, earn more.",
       "feature3": "Smart Placement",
-      "feature3Desc": "Pip picks the best day for new jobs based on your location.",
+      "feature3Desc": "Rounds picks the best day for new jobs based on your location.",
       "tagline": "Smarter schedules. Shorter routes. More time for what matters.",
       "stat1Title": "Fewer miles between jobs",
-      "stat1Desc": "Pip finds the shortest path through your day",
+      "stat1Desc": "Rounds finds the shortest path through your day",
       "stat2Title": "No more planning the night before",
       "stat2Desc": "Your week builds itself around what makes sense",
       "bestValue": "BEST VALUE",
@@ -1569,25 +1578,25 @@
       "termsLink": "Terms of Service",
       "purchaseFailed": "Failed to complete purchase. Please try again.",
       "restored": "Restored!",
-      "restoredMessage": "Your Pip+ subscription has been restored.",
+      "restoredMessage": "Your Rounds subscription has been restored.",
       "noPurchases": "No Purchases Found",
       "noPurchasesMessage": "We couldn't find any previous purchases to restore.",
       "restoreFailed": "Failed to restore purchases. Please try again."
     },
     "hardPaywall": {
-      "title": "Upgrade to Pip+",
+      "title": "Upgrade to Rounds",
       "subtitle": "Unlock unlimited clients, jobs, and smart scheduling",
       "feature1": "Unlimited clients",
       "feature2": "Unlimited jobs",
       "feature3": "Schedule Builder",
       "feature4": "Smart route planning",
-      "continueButton": "Upgrade to Pip+",
+      "continueButton": "Upgrade to Rounds",
       "processing": "Processing...",
       "restore": "Restore Purchases"
     },
     "welcome": {
       "headline": "You're ready to grow.",
-      "subtitle": "Pip+ is unlocked. Every tool you need to run a tighter schedule and reclaim your time.",
+      "subtitle": "Rounds is unlocked. Every tool you need to run a tighter schedule and reclaim your time.",
       "nowUnlocked": "NOW UNLOCKED",
       "featureUnlimitedClients": "Unlimited Clients",
       "featureUnlimitedJobs": "Unlimited Jobs",
@@ -1598,7 +1607,7 @@
       "trustSubtitle": "Manage or cancel through your device settings. Your data is always yours.",
       "whatNext": "What would you like to do first?",
       "actionBuildTitle": "Build my schedule",
-      "actionBuildSubtitle": "Set up your weeks and let Pip optimize them",
+      "actionBuildSubtitle": "Set up your weeks and let Rounds optimize them",
       "actionClientsTitle": "Add my clients",
       "actionClientsSubtitle": "Import or add your client list",
       "actionExploreTitle": "Explore on my own",
@@ -1624,34 +1633,34 @@
       "basedOn": "This is based on your current client list. Imagine it with",
       "or": "or",
       "clients": "clients.",
-      "unlockPipPlus": "Unlock Pip+",
+      "unlockPipPlus": "Unlock Rounds",
       "clientFallback": "Client {{number}}"
     },
     "soft": {
       "headline": "Whenever you're ready",
-      "body": "No rush. Your clients aren't going anywhere. When you're ready to grow, Pip+ is here.",
+      "body": "No rush. Your clients aren't going anywhere. When you're ready to grow, Rounds is here.",
       "nudgeTitle": "Fewer miles, more jobs done",
       "nudgeDesc": "Smart routes find the shortest path through your day",
-      "learnMore": "Learn more about Pip+",
+      "learnMore": "Learn more about Rounds",
       "continueFree": "Continue with free plan"
     }
   },
   "contactPicker": {
     "partialImport": "{{imported}} of {{total}} contacts imported — free plan limit reached",
-    "limitReached": "Free plan limit reached. Upgrade to Pip+ for unlimited clients.",
+    "limitReached": "Free plan limit reached. Upgrade to Rounds for unlimited clients.",
     "clientLimitTitle": "Client Limit Reached",
-    "clientLimitMessage": "You've reached the free plan limit of {{limit}} clients. Upgrade to Pip+ for unlimited clients.",
+    "clientLimitMessage": "You've reached the free plan limit of {{limit}} clients. Upgrade to Rounds for unlimited clients.",
     "freePlanLimitTitle": "Free Plan Limit",
     "freePlanLimitMax": "The free plan allows up to {{limit}} clients. You've selected the maximum.",
     "freePlanLimitPartial": "You already have {{existing}} client(s). The free plan allows {{limit}} total, so you can import up to {{remaining}}.",
     "selectionLimitTitle": "Selection Limit",
     "selectionLimitMessage": "You can import up to {{limit}} contacts at a time.",
-    "bannerLimitReached": "You've reached the free plan limit of {{limit}} clients. Upgrade to Pip+ for unlimited.",
+    "bannerLimitReached": "You've reached the free plan limit of {{limit}} clients. Upgrade to Rounds for unlimited.",
     "bannerSlotsRemaining": "Free plan: {{limit}} clients total — {{remaining}} slot(s) remaining.",
     "loadError": "Failed to load contacts",
     "noSelection": "No Selection",
     "noSelectionMessage": "Please select at least one contact to import.",
-    "freeLimitImportMessage": "The free plan allows {{limit}} clients total. You can import {{remaining}} — please deselect some contacts or upgrade to Pip+.",
+    "freeLimitImportMessage": "The free plan allows {{limit}} clients total. You can import {{remaining}} — please deselect some contacts or upgrade to Rounds.",
     "prepareError": "Something went wrong. Please try again.",
     "importErrorTitle": "Import Error",
     "importErrorMessage": "Failed to import some clients. Please try again."
@@ -1960,7 +1969,7 @@
   "contactPickerExtra": {
     "discardTitle": "Discard Selection?",
     "discardMessage": "You have {{count}} contact{{plural}} selected. Discard and go back?",
-    "alreadyInPip": "Already in Pip",
+    "alreadyInPip": "Already in Rounds",
     "importConfirmTitle": "Import {{count}} Client{{plural}}?",
     "importConfirmMessage": "This will add {{count}} client{{plural}} to your account.",
     "missingAddressTitle": "Missing Addresses",
@@ -1982,7 +1991,7 @@
     "importButtonLabel": "Import {{count}} Client",
     "importButtonLabelPlural": "Import {{count}} Clients",
     "importButtonMissing": "Import {{count}} Clients ({{missing}} missing address)",
-    "permissionText": "To import clients from your contacts, please allow Pip to access your contacts in Settings.",
+    "permissionText": "To import clients from your contacts, please allow Rounds to access your contacts in Settings.",
     "importAction": "Import"
   },
   "avatar": {
@@ -2013,7 +2022,7 @@
     "noTemplate": "No template set",
     "modified": "Modified",
     "typePlaceholder": "Type your message...",
-    "upgradeToCustomize": "Upgrade to Pip+ to customize",
+    "upgradeToCustomize": "Upgrade to Rounds to customize",
     "newTemplate": "New Template",
     "editTemplate": "Edit Template",
     "nameLabel": "Name",
@@ -2031,7 +2040,7 @@
     "maxReached": "10 template limit reached",
     "nameRequired": "Name is required",
     "nameExists": "You already have a template with that name",
-    "plusOnly": "Pip+",
+    "plusOnly": "Rounds",
     "upgradeForCustom": "Upgrade to customize"
   },
   "calendarMap": {
@@ -2080,14 +2089,14 @@
   "introOffer": {
     "badge": "One-Time Offer",
     "headline": "Lock in 50% off",
-    "subhead": "This price won't be offered again. Early supporters get Pip+ at a locked-in rate — forever.",
+    "subhead": "This price won't be offered again. Early supporters get Rounds at a locked-in rate — forever.",
     "yearly": "Yearly",
     "monthly": "Monthly",
     "bestDeal": "SAVE 50%",
     "includes1": "Unlimited clients & jobs",
     "includes2": "Schedule Builder & route optimization",
-    "includes3": "All future Pip+ features included",
-    "cta": "Unlock Pip+",
+    "includes3": "All future Rounds features included",
+    "cta": "Unlock Rounds",
     "processing": "Processing...",
     "dismiss": "No thanks, I'll pay full price later"
   },
@@ -2115,12 +2124,12 @@
   "update": {
     "required": {
       "title": "Update Required",
-      "body": "A new version of Pip is available with important changes. Please update to continue.",
+      "body": "A new version of Rounds is available with important changes. Please update to continue.",
       "button": "Update Now"
     },
     "available": {
       "title": "Update Available",
-      "body": "A new version of Pip is available with improvements.",
+      "body": "A new version of Rounds is available with improvements.",
       "updateButton": "Update Now",
       "laterButton": "Later"
     }
@@ -2209,7 +2218,7 @@
     "blockedDays": "Blocked Days",
     "blockedDaysHintPlus": "Smart Placement won't suggest these days for {{name}}",
     "blockedDaysHintPlusGeneric": "Smart Placement won't suggest these days for this client",
-    "blockedDaysHintFree": "Saved for later — activates with Pip+ Smart Placement",
+    "blockedDaysHintFree": "Saved for later — activates with Rounds Smart Placement",
     "clientAdded": "Client added",
     "addFailed": "Could not add client",
     "sort": {
@@ -2396,35 +2405,13 @@
       "tagline": "Schedule Command Center",
       "signInWithEmail": "Sign in with email",
       "signingIn": "Signing in...",
-      "footerHint": "Sign in to sync clients from the Pip mobile app"
+      "footerHint": "Sign in to sync clients from the Rounds mobile app"
     },
     "paywall": {
       "scheduleBuilder": "Schedule Builder",
       "smartPlacement": "Smart Placement",
-      "upgradeOnMobile": "Upgrade in the Pip mobile app to unlock this on web. Your subscription syncs automatically once active.",
+      "upgradeOnMobile": "Upgrade in the Rounds mobile app to unlock this on web. Your subscription syncs automatically once active.",
       "subscriptionSyncs": "Subscriptions managed in the App Store. Web reflects your current entitlement."
     }
-  },
-  "subscription": {
-    "title": "Subscription",
-    "free": "Free Plan",
-    "plus": "Pip+",
-    "freeStatus": "Limited features",
-    "plusActive": "Subscription active",
-    "activeBadge": "Active",
-    "manage": "Manage in App Store",
-    "upgradeOnMobile": "Upgrade in the Pip mobile app",
-    "syncsToWeb": "Your subscription syncs to web automatically once active.",
-    "manageTitle": "Manage Subscription",
-    "restore": "Restore Purchases",
-    "appleNote": "Plan details, renewal date, and billing live in your Apple ID settings. Use the button above to manage or cancel.",
-    "includesTitle": "What you get",
-    "unlockTitle": "Unlock with Pip+",
-    "renewalTitle": "Renewal & Plan",
-    "renewalNote": "Plan details, renewal date, and billing live in your App Store account. Use the button below to manage or cancel.",
-    "benefitBuilder": "Schedule Builder",
-    "benefitSmart": "Smart Placement",
-    "benefitTemplates": "Custom message templates, no watermark",
-    "benefitRoute": "Daily route optimization"
   }
 }

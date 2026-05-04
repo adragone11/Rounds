@@ -1,14 +1,17 @@
 import { useState } from 'react'
 import { useAuth } from '../lib/auth'
 import { useLanguage } from '../lib/language'
+import { supabase } from '../lib/supabase'
 
 export default function Login() {
   const { signInWithApple, signInWithGoogle, signInWithEmail } = useAuth()
   const { t } = useLanguage()
   const [showEmail, setShowEmail] = useState(false)
+  const [mode, setMode] = useState<'signin' | 'signup'>('signin')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
+  const [info, setInfo] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
 
   const handleApple = async () => {
@@ -27,17 +30,35 @@ export default function Login() {
     if (!email.trim() || !password) return
     setLoading(true)
     setError(null)
-    const err = await signInWithEmail(email.trim(), password)
-    if (err) setError(err)
+    setInfo(null)
+    if (mode === 'signin') {
+      const err = await signInWithEmail(email.trim(), password)
+      if (err) setError(err)
+    } else {
+      // New signups land in the closed beta — flag them in user metadata
+      // so backend/admin tooling can filter beta cohort. Existing users
+      // signing in via the other branch never trigger this path.
+      const { data, error } = await supabase.auth.signUp({
+        email: email.trim(),
+        password,
+        options: { data: { is_beta: true } },
+      })
+      if (error) setError(error.message)
+      else if (data.user && !data.session) {
+        setInfo('Check your email to confirm your account.')
+      }
+    }
     setLoading(false)
   }
+
+  const isSignup = mode === 'signup'
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="w-full max-w-sm mx-auto px-6">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">{t('onboarding.statistic.pipName')}</h1>
-          <p className="text-gray-500 mt-2">{t('web.login.tagline')}</p>
+          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Rounds</h1>
+          <p className="text-gray-500 mt-2">Schedule Builder for recurring work</p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">
@@ -117,11 +138,23 @@ export default function Login() {
                 disabled={loading || !email.trim() || !password}
                 className="w-full bg-gray-900 text-white py-2.5 rounded-xl text-sm font-medium hover:bg-gray-800 disabled:opacity-50 transition-colors"
               >
-                {loading ? t('web.login.signingIn') : t('auth.login.signInButton')}
+                {loading
+                  ? (isSignup ? 'Creating account...' : t('web.login.signingIn'))
+                  : (isSignup ? 'Create account' : t('auth.login.signInButton'))}
+              </button>
+              <button
+                type="button"
+                onClick={() => { setMode(isSignup ? 'signin' : 'signup'); setError(null); setInfo(null) }}
+                className="w-full text-xs text-gray-500 hover:text-gray-700 py-1"
+              >
+                {isSignup ? 'Already have an account? Sign in' : "New to Rounds? Create an account"}
               </button>
             </div>
           )}
 
+          {info && (
+            <p className="text-xs text-emerald-600 text-center">{info}</p>
+          )}
           {error && (
             <p className="text-xs text-red-500 text-center">{error}</p>
           )}

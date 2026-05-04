@@ -228,8 +228,8 @@ export default function AddClientSheet({
                 {t('clientsWeb.blockedDays') || 'Blocked Days'}{' '}
                 <span className="text-gray-400 font-normal">({t('common.optional') || 'optional'})</span>
               </label>
-              {!isPlus && (
-                <span className="text-[8px] font-bold uppercase tracking-wider px-1 py-0.5 rounded bg-blue-600 text-white">Pip+</span>
+              {false && !isPlus && (
+                <span className="text-[8px] font-bold uppercase tracking-wider px-1 py-0.5 rounded bg-blue-600 text-white"></span>
               )}
             </div>
             <div className="flex gap-1">
@@ -260,7 +260,7 @@ export default function AddClientSheet({
                   ? (name.trim()
                       ? t('clientsWeb.blockedDaysHintPlus', { name: name.trim() }) || `Smart Placement won't suggest these days for ${name.trim()}`
                       : t('clientsWeb.blockedDaysHintPlusGeneric') || `Smart Placement won't suggest these days for this client`)
-                  : (t('clientsWeb.blockedDaysHintFree') || 'Saved for later — activates with Pip+ Smart Placement')}
+                  : (t('clientsWeb.blockedDaysHintFree') || 'Saved for later — activates with Smart Placement')}
               </p>
             )}
           </div>

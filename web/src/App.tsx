@@ -33,7 +33,7 @@ function App() {
     return (
       <div className="h-screen flex items-center justify-center bg-surface-page">
         <div className="text-center">
-          <h1 className="text-xl font-bold text-ink-primary mb-2">Pip</h1>
+          <h1 className="text-xl font-bold text-ink-primary mb-2">Rounds</h1>
           <p className="text-sm text-ink-tertiary">Loading...</p>
         </div>
       </div>
@@ -75,11 +75,11 @@ function App() {
                 aria-label="Add job"
                 className="w-11 h-11 shrink-0 flex items-center justify-center hover:scale-105 active:scale-95 transition-transform"
               >
-                <img src="/pip-icon.png" alt="Pip" className="w-11 h-11 object-contain" />
+                <img src="/pip-icon.png" alt="Rounds" className="w-11 h-11 object-contain" />
               </button>
               <div className="min-w-0 leading-tight">
-                <div className="text-[18px] font-bold tracking-tight">Pip</div>
-                <div className="text-[10px] text-gray-400 font-medium tracking-tight truncate">Job &amp; Client Scheduler</div>
+                <div className="text-[18px] font-bold tracking-tight">Rounds</div>
+                <div className="text-[10px] text-gray-400 font-medium tracking-tight truncate">Schedule Builder</div>
               </div>
             </div>
           ) : (
@@ -90,13 +90,14 @@ function App() {
               aria-label="Add job"
               className="w-11 h-11 flex items-center justify-center mx-auto hover:scale-105 active:scale-95 transition-transform"
             >
-              <img src="/pip-icon.png" alt="Pip" className="w-11 h-11 object-contain" />
+              <img src="/pip-icon.png" alt="Rounds" className="w-11 h-11 object-contain" />
             </button>
           )}
         </div>
 
         {/* Nav */}
         <nav className={`flex-1 flex flex-col gap-0.5 ${collapsed ? 'px-2 py-3' : 'px-3 py-3'}`}>
+          {false && (
           <NavLink to="/" end className={navItem} title={t('nav.dashboard')}>
             <svg className="w-[18px] h-[18px] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
               <rect x="3" y="3" width="7" height="9" rx="1.5" />
@@ -106,6 +107,7 @@ function App() {
             </svg>
             {!collapsed && <span className="text-sm">{t('nav.dashboard')}</span>}
           </NavLink>
+          )}
 
           <NavLink to="/schedule" className={navItem} title={t('nav.schedule')}>
             <svg className="w-[18px] h-[18px] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
@@ -125,6 +127,7 @@ function App() {
             {!collapsed && <span className="text-sm">{t('nav.clients')}</span>}
           </NavLink>
 
+          {false && (
           <NavLink to="/settings" className={navItem} title={t('nav.settings')}>
             <svg className="w-[18px] h-[18px] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="3" />
@@ -132,6 +135,7 @@ function App() {
             </svg>
             {!collapsed && <span className="text-sm">{t('nav.settings')}</span>}
           </NavLink>
+          )}
         </nav>
 
         {/* Get iOS app — sits directly above the tier chip so the upgrade
@@ -153,8 +157,8 @@ function App() {
           </a>
         </div>
 
-        {/* Pip+ promo */}
-        {!collapsed && (
+        {/* Pip+ promo — hidden in Rounds rebrand */}
+        {false && !collapsed && (
           <div className="px-3 pb-3">
             <button
               onClick={() => navigate('/settings')}
@@ -165,7 +169,7 @@ function App() {
                   : 'rgba(255,255,255,0.04)',
                 color: profile.isPlus ? '#fff' : '#9CA3AF',
               }}
-              title={profile.isPlus ? 'Pip+ active' : 'Free plan — upgrade in the mobile app'}
+              title={profile.isPlus ? 'Active' : 'Free plan'}
             >
               <span
                 className="w-2 h-2 rounded-full shrink-0"
@@ -175,7 +179,7 @@ function App() {
                 }}
               />
               <span className="flex-1 text-[13px] font-bold tracking-tight text-left">
-                {profile.isPlus ? 'Pip+ Active' : 'Free plan'}
+                {profile.isPlus ? 'Active' : 'Free plan'}
               </span>
               <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9 6l6 6-6 6" />

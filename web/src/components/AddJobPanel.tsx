@@ -222,13 +222,11 @@ export default function AddJobPanel({
               />
             </div>
           )}
-          {selectedClient && !clientPickerOpen && !isPlus && (
+          {false && selectedClient && !clientPickerOpen && !isPlus && (
             <div className="mt-2 rounded-[10px] bg-blue-50/60 border border-blue-100 p-2">
               <div className="flex items-start gap-2">
-                <span className="inline-block mt-0.5 text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-blue-600 text-white">Pip+</span>
                 <div className="flex-1 min-w-0">
                   <p className="text-[11px] font-semibold text-gray-900">Smart Placement</p>
-                  <p className="text-[10px] text-gray-500 mt-0.5">Upgrade in the Pip mobile app to surface best-day suggestions here.</p>
                 </div>
               </div>
             </div>

@@ -207,8 +207,8 @@ export function EditClientCard({
       <div>
         <div className="flex items-center justify-between mb-1">
           <p className="text-[9px] font-semibold text-gray-500 uppercase tracking-wider">Blocked days</p>
-          {!isPlus && (
-            <span className="text-[8px] font-bold uppercase tracking-wider px-1 py-0.5 rounded bg-blue-600 text-white">Pip+</span>
+          {false && !isPlus && (
+            <span className="text-[8px] font-bold uppercase tracking-wider px-1 py-0.5 rounded bg-blue-600 text-white"></span>
           )}
         </div>
         {isPlus ? (
@@ -236,7 +236,7 @@ export function EditClientCard({
           </div>
         ) : (
           <p className="text-[10px] text-gray-400 leading-snug">
-            Upgrade in the Pip mobile app to block weekdays for this client.
+            Block weekdays for this client.
           </p>
         )}
       </div>
