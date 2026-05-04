@@ -839,10 +839,12 @@ export default function Schedule() {
 
             <button
               onClick={() => navigate('/schedule/builder')}
-              className="px-3 py-1.5 text-[10px] font-bold text-white rounded-lg transition-all shadow-sm flex items-center gap-1.5"
-              style={{ backgroundColor: '#4A7CFF' }}
-              title={undefined}
+              className="px-4 py-2.5 text-sm font-bold text-white rounded-lg transition-all shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] flex items-center gap-2"
+              style={{ background: 'linear-gradient(135deg, #4A7CFF 0%, #6366F1 100%)' }}
             >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+              </svg>
               {t('scheduleBuilder.title')}
             </button>
           </div>
