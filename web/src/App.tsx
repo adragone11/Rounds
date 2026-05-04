@@ -62,35 +62,17 @@ function App() {
         className={`${w} shrink-0 flex flex-col text-white transition-[width] duration-200 ease-out relative z-[2] dark:border-r dark:border-white/[0.06]`}
         style={{ backgroundColor: '#0E1014' }}
       >
-        {/* Brand row — icon also serves as the global Add Job trigger so we
-            don't lose the + entry point when swapping in the logo mark. */}
-        <div className={`flex items-center justify-between border-b border-white/[0.06] ${collapsed ? 'py-5 px-0 justify-center' : 'py-5 px-[18px]'}`}>
+        {/* Brand row */}
+        <div className={`flex items-center border-b border-white/[0.06] ${collapsed ? 'py-5 px-0 justify-center' : 'py-5 px-[18px]'}`}>
           {!collapsed ? (
-            <div className="flex items-center gap-1.5 min-w-0">
-              <button
-                type="button"
-                onClick={() => navigate('/schedule?action=addJob')}
-                title="Add job"
-                aria-label="Add job"
-                className="w-11 h-11 shrink-0 flex items-center justify-center hover:scale-105 active:scale-95 transition-transform"
-              >
-                <img src="/pip-icon.png" alt="Rounds" className="w-11 h-11 object-contain" />
-              </button>
-              <div className="min-w-0 leading-tight">
-                <div className="text-[18px] font-bold tracking-tight">Rounds</div>
-                <div className="text-[10px] text-gray-400 font-medium tracking-tight truncate">Schedule Builder</div>
-              </div>
+            <div className="min-w-0 leading-tight">
+              <div className="text-[18px] font-bold tracking-tight">Rounds</div>
+              <div className="text-[10px] text-gray-400 font-medium tracking-tight truncate">Schedule Builder</div>
             </div>
           ) : (
-            <button
-              type="button"
-              onClick={() => navigate('/schedule?action=addJob')}
-              title="Add job"
-              aria-label="Add job"
-              className="w-11 h-11 flex items-center justify-center mx-auto hover:scale-105 active:scale-95 transition-transform"
-            >
-              <img src="/pip-icon.png" alt="Rounds" className="w-11 h-11 object-contain" />
-            </button>
+            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+              R
+            </div>
           )}
         </div>
 
