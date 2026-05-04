@@ -714,7 +714,8 @@ export default function Schedule() {
           </div>
 
           <div className="flex items-center gap-2.5">
-            <div className="relative">
+            {/* Smart Placement button - hidden for Rounds beta */}
+            {false && <div className="relative">
               <button
                 onClick={() => uiDispatch({ type: 'SET_SHOW_SMART_SETTINGS', payload: !showSmartSettings })}
                 className={`inline-flex items-center gap-1.5 px-3 py-2 text-[13px] font-semibold rounded-[10px] transition-colors ${
@@ -834,7 +835,7 @@ export default function Schedule() {
                         </div>
                       </>
                     )}
-                  </div>
+                  </div>}
 
             <button
               onClick={() => navigate('/schedule/builder')}

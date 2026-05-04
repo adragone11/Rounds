@@ -138,24 +138,7 @@ function App() {
           )}
         </nav>
 
-        {/* Get iOS app — sits directly above the tier chip so the upgrade
-            path (free plan → install app → buy Pip+) reads top-to-bottom.
-            Web is Command Center, mobile is where the day actually runs. */}
-        <div className={collapsed ? 'px-2 pb-1' : 'px-3 pb-1'}>
-          <a
-            href="https://apps.apple.com/app/id6756827353"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={navItem({ isActive: false })}
-            title="Get the iOS app"
-          >
-            <svg className="w-[18px] h-[18px] shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
-              <rect x="6" y="2" width="12" height="20" rx="3" />
-              <path d="M12 18h.01" />
-            </svg>
-            {!collapsed && <span className="text-sm">Get iOS app</span>}
-          </a>
-        </div>
+{/* Get iOS app - hidden for Rounds beta */}
 
         {/* Pip+ promo — hidden in Rounds rebrand */}
         {false && !collapsed && (
