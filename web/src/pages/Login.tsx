@@ -7,7 +7,7 @@ export default function Login() {
   const { signInWithApple, signInWithGoogle, signInWithEmail } = useAuth()
   const { t } = useLanguage()
   // showEmail state removed - email form is always shown for beta
-  const [mode, setMode] = useState<'signin' | 'signup'>('signup')
+  const [mode] = useState<'signin' | 'signup'>('signup')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
