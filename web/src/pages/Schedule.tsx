@@ -34,6 +34,7 @@ import { ScheduleConfirmModals } from '../components/ScheduleConfirmModals'
 import { MonthView } from '../views/MonthView'
 import { WeekView } from '../views/WeekView'
 import { DayView } from '../views/DayView'
+import WelcomeOnboarding from '../components/WelcomeOnboarding'
 
 export default function Schedule() {
   const { t } = useLanguage()
@@ -651,6 +652,7 @@ export default function Schedule() {
 
   return (
     <div className="h-full flex flex-col bg-surface-page">
+      <WelcomeOnboarding />
       {/* Header */}
       <div className="px-6 py-3.5 bg-white shrink-0 border-b border-edge-default">
         <div className="flex items-center justify-between gap-4">
@@ -684,6 +686,22 @@ export default function Schedule() {
             >
               {t('common.today')}
             </button>
+            {/* View toggle — moved to left side near Today */}
+            <div className="flex bg-surface-chip rounded-[10px] p-[3px]">
+              {(['month', 'week', 'day'] as const).map(view => (
+                <button
+                  key={view}
+                  onClick={() => calDispatch({ type: 'SET_CALENDAR_VIEW', payload: view })}
+                  className={`px-4 py-1.5 text-[13px] font-semibold rounded-[7px] transition-all ${
+                    calendarView === view
+                      ? 'bg-white text-ink-primary shadow-sm'
+                      : 'text-ink-secondary hover:text-ink-primary'
+                  }`}
+                >
+                  {view === 'month' ? t('calendar.viewMonth') : view === 'week' ? t('calendar.viewWeek') : t('calendar.viewDay')}
+                </button>
+              ))}
+            </div>
             {store.schedulePlan && (
               <button
                 onClick={() => navigate('/schedule-change')}
@@ -692,25 +710,6 @@ export default function Schedule() {
                 {t('schedule.scheduleChange')}
               </button>
             )}
-          </div>
-
-          {/* View toggle — middle of the header row, between the title
-              cluster and the right-hand controls. justify-between on the
-              parent gives this its centered slot. */}
-          <div className="flex bg-surface-chip rounded-[10px] p-[3px]">
-            {(['month', 'week', 'day'] as const).map(view => (
-              <button
-                key={view}
-                onClick={() => calDispatch({ type: 'SET_CALENDAR_VIEW', payload: view })}
-                className={`px-4 py-1.5 text-[13px] font-semibold rounded-[7px] transition-all ${
-                  calendarView === view
-                    ? 'bg-white text-ink-primary shadow-sm'
-                    : 'text-ink-secondary hover:text-ink-primary'
-                }`}
-              >
-                {view === 'month' ? t('calendar.viewMonth') : view === 'week' ? t('calendar.viewWeek') : t('calendar.viewDay')}
-              </button>
-            ))}
           </div>
 
           <div className="flex items-center gap-2.5">
