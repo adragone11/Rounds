@@ -239,7 +239,7 @@ export default function ScheduleBuilder() {
 
   // ── JSON import state ──
   const fileInputRef = useRef<HTMLInputElement>(null)
-  const [importing, setImporting] = useState(false)
+  const [_importing, _setImporting] = useState(false)
 
   // ── Compare & confirm state ──
   const [showChanges, setShowChanges] = useState(false)
@@ -615,10 +615,10 @@ export default function ScheduleBuilder() {
     else setSelectedIds(new Set(geocodedClients.map(c => c.id)))
   }
 
-  const handleImportJSON = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const _handleImportJSON = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     if (!file) return
-    setImporting(true)
+    _setImporting(true)
     try {
       const text = await file.text()
       const data = JSON.parse(text) as {
@@ -651,7 +651,7 @@ export default function ScheduleBuilder() {
     } catch (err) {
       alert(`Import failed: ${err instanceof Error ? err.message : String(err)}`)
     } finally {
-      setImporting(false)
+      _setImporting(false)
       if (fileInputRef.current) fileInputRef.current.value = ''
     }
   }
