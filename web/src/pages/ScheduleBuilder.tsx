@@ -218,6 +218,7 @@ export default function ScheduleBuilder() {
   const [setAllDur, setSetAllDur] = useState(60)
   const [setAllPrice, setSetAllPrice] = useState<string>('0')
   const [expandedClientId, setExpandedClientId] = useState<string | null>(null)
+  const [addressInputMap, setAddressInputMap] = useState<Map<string, string>>(new Map())
 
   // ── Results state ──
   const [result, setResult] = useState<PerfectScheduleResult | null>(() => resultFromPersisted(persisted?.result ?? null))
@@ -1881,8 +1882,8 @@ export default function ScheduleBuilder() {
                             <p className="text-sm font-medium text-gray-800 truncate">{client.name}</p>
                           </div>
                           <AddressAutocomplete
-                            value=""
-                            onChange={() => {}}
+                            value={addressInputMap.get(client.id) ?? ''}
+                            onChange={(v) => setAddressInputMap(prev => new Map(prev).set(client.id, v))}
                             onSelect={async r => {
                               await store.updateClient(client.id, client.name, r.address, { lat: r.lat, lng: r.lng })
                               // Auto-select the newly-addressed client so they flow into the builder.
