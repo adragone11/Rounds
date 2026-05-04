@@ -2146,7 +2146,16 @@ export default function ScheduleBuilder() {
       </div>
 
       {/* Sticky bottom bar */}
-      <div className="px-5 py-4 border-t border-gray-200 bg-white shrink-0 flex justify-center">
+      <div className="px-5 py-4 border-t border-gray-200 bg-white shrink-0 flex flex-col items-center gap-2">
+        {!canBuild && (
+          <p className="text-xs text-amber-600 font-medium">
+            {!hasHome
+              ? 'Enter your starting address above to open the builder'
+              : selectedClients.length < 3
+              ? 'Select at least 3 clients with addresses'
+              : 'Select at least one working day'}
+          </p>
+        )}
         <button
           onClick={enterManualMode}
           disabled={!canBuild}
