@@ -4,7 +4,6 @@ import { useAuth } from './lib/auth'
 import { useLanguage } from './lib/language'
 import { useProfile } from './lib/profile'
 import { useStore } from './store'
-import Dashboard from './pages/Dashboard'
 import Schedule from './pages/Schedule'
 import ScheduleBuilder from './pages/ScheduleBuilder'
 import ScheduleChange from './pages/ScheduleChange'
@@ -226,7 +225,7 @@ function App() {
           </div>
         ) : (
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Schedule />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/schedule/builder" element={
               <PipPlusGate feature="schedule-builder">
