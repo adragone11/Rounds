@@ -4,6 +4,7 @@ import { useCurrency } from '../lib/currency'
 import { useLanguage } from '../lib/language'
 import AddressAutocomplete from '../components/AddressAutocomplete'
 import AddClientSheet from '../components/AddClientSheet'
+import ImportClientsModal from '../components/ImportClientsModal'
 import ColorPickerChip from '../components/ColorPickerChip'
 import { dedupeJobs } from '../lib/jobs'
 import { FollowUpCard, getOverdueJobs } from './Reports'
@@ -62,6 +63,7 @@ export default function Clients() {
   const { t } = useLanguage()
   const [search, setSearch] = useState('')
   const [showAddClient, setShowAddClient] = useState(false)
+  const [showImport, setShowImport] = useState(false)
   const [selectedClientId, setSelectedClientId] = useState<string | null>(null)
   // Always derive from the store so live store mutations (e.g. color picker)
   // reflect immediately in the detail panel without re-selecting.
@@ -222,6 +224,15 @@ export default function Clients() {
             </p>
           </div>
           <div className="flex items-center gap-2">
+            <button
+              onClick={() => setShowImport(true)}
+              className="inline-flex items-center gap-1.5 px-3 py-2 text-[13px] font-semibold text-gray-700 bg-white border border-gray-300 rounded-[10px] hover:bg-gray-50 transition-colors"
+            >
+              <svg className="w-[14px] h-[14px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" />
+              </svg>
+              Import
+            </button>
             <button
               onClick={() => setShowAddClient(true)}
               className="inline-flex items-center gap-1.5 px-3 py-2 text-[13px] font-semibold text-white bg-gray-900 rounded-[10px] hover:bg-gray-700 transition-colors"
@@ -632,6 +643,9 @@ export default function Clients() {
         onClose={() => setShowAddClient(false)}
         onCreated={(id) => { setSelectedClientId(id); setActiveTab('details') }}
       />
+
+      {/* Import Clients modal */}
+      {showImport && <ImportClientsModal onClose={() => setShowImport(false)} />}
 
     </div>
   )
