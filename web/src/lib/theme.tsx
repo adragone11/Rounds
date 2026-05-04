@@ -11,8 +11,6 @@ import type { ReactNode } from 'react'
  *  index.css flip all token-based surfaces; Tailwind `dark:` variants are
  *  wired to the same attribute via `@custom-variant dark`. */
 
-const THEME_KEY = '@app_theme'
-
 export type Theme = 'light' | 'dark'
 
 interface ThemeContextValue {
@@ -23,36 +21,15 @@ interface ThemeContextValue {
 
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined)
 
-function readStored(): Theme | null {
-  if (typeof window === 'undefined') return null
-  try {
-    const saved = localStorage.getItem(THEME_KEY)
-    if (saved === 'light' || saved === 'dark') return saved
-  } catch {
-    // storage disabled
-  }
-  return null
-}
-
-function detectDefault(): Theme {
-  if (typeof window === 'undefined') return 'light'
-  try {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  } catch {
-    return 'light'
-  }
-}
-
 function applyToDocument(theme: Theme) {
   if (typeof document === 'undefined') return
   document.documentElement.setAttribute('data-theme', theme)
-  // Native form controls / scrollbars pick this up for free.
   document.documentElement.style.colorScheme = theme
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   // Force light mode only for Rounds beta
-  const [theme, setThemeState] = useState<Theme>('light')
+  const [theme] = useState<Theme>('light')
 
   // Apply on mount + on every theme change.
   useEffect(() => {
