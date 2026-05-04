@@ -1328,7 +1328,7 @@ export default function ScheduleBuilder() {
                 </button>
               </div>
             ) : aiTrace ? (
-              <AITracePanel trace={aiTrace} onDismiss={() => setAiTrace(null)} />
+              <AITracePanel trace={aiTrace!} onDismiss={() => setAiTrace(null)} />
             ) : null}
           </div>
         )}

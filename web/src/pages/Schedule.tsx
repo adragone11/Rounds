@@ -1073,7 +1073,7 @@ export default function Schedule() {
             const client = store.clients.find(c => c.id === selectedClientId)
             if (!client) return null
             const placeOnDate = (freq: Frequency, date: string) => {
-              store.placeClientRecurring(selectedClientId, date, freq === 'one-time' ? 'one-time' : freq)
+              store.placeClientRecurring(selectedClientId!, date, freq === 'one-time' ? 'one-time' : freq)
               const d = new Date(date + 'T00:00:00')
               calDispatch({ type: 'NAVIGATE_FOCUS', payload: d })
               uiDispatch({ type: 'SET_SELECTED_CLIENT_ID', payload: null })
@@ -1081,7 +1081,7 @@ export default function Schedule() {
             return (
               <div className="p-2.5 border-b border-gray-200 bg-amber-50/50">
                 <div className="flex items-center justify-between mb-1.5">
-                  <p className="text-[10px] font-semibold text-gray-700 uppercase tracking-wider">Smart placement · {client.name}</p>
+                  <p className="text-[10px] font-semibold text-gray-700 uppercase tracking-wider">Smart placement · {client!.name}</p>
                   <button onClick={() => uiDispatch({ type: 'SET_SELECTED_CLIENT_ID', payload: null })} className="text-gray-400 hover:text-gray-600">
                     <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -1091,13 +1091,13 @@ export default function Schedule() {
 
                 <SmartPlacementSuggestions
                   bestDays={bestDaysList}
-                  hasCoords={!!client.lat && !!client.lng}
+                  hasCoords={!!client!.lat && !!client!.lng}
                   placedNeighborCount={placedNeighborCount}
                   previewBestDay={previewBestDay}
                   onTogglePreview={d => uiDispatch({ type: 'SET_PREVIEW_BEST_DAY', payload: d })}
                   onPick={d => {
                     uiDispatch({ type: 'SET_PREVIEW_BEST_DAY', payload: null })
-                    placeOnDate(client.frequency ?? 'weekly', d)
+                    placeOnDate(client!.frequency ?? 'weekly', d)
                   }}
                 />
               </div>
