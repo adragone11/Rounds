@@ -7,7 +7,7 @@ export default function Login() {
   const { signInWithApple, signInWithGoogle, signInWithEmail } = useAuth()
   const { t } = useLanguage()
   // showEmail state removed - email form is always shown for beta
-  const [mode, setMode] = useState<'signin' | 'signup'>('signin')
+  const [mode, setMode] = useState<'signin' | 'signup'>('signup')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
@@ -154,13 +154,7 @@ export default function Login() {
                 ? (isSignup ? 'Getting started...' : t('web.login.signingIn'))
                 : (isSignup ? 'Get Started' : t('auth.login.signInButton'))}
             </button>
-            <button
-              type="button"
-              onClick={() => { setMode(isSignup ? 'signin' : 'signup'); setError(null); setInfo(null) }}
-              className="w-full text-xs text-gray-500 hover:text-gray-700 py-1"
-            >
-              {isSignup ? 'Already have an account? Sign in' : "New to Rounds? Get started"}
-            </button>
+{/* Mode toggle hidden for beta - signup only */}
           </div>
 
           {info && (
@@ -171,9 +165,7 @@ export default function Login() {
           )}
         </div>
 
-        <p className="text-xs text-gray-400 text-center mt-4">
-          {t('web.login.footerHint')}
-        </p>
+{/* Mobile app hint hidden for beta */}
       </div>
     </div>
   )
