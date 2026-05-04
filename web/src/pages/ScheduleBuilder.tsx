@@ -238,8 +238,8 @@ export default function ScheduleBuilder() {
   const containerRef = useRef<HTMLDivElement>(null)
 
   // ── JSON import state ──
-  const fileInputRef = useRef<HTMLInputElement>(null)
-  const [_importing, _setImporting] = useState(false)
+  // fileInputRef removed - Import JSON hidden for beta
+  // Import JSON removed for Rounds beta
 
   // ── Compare & confirm state ──
   const [showChanges, setShowChanges] = useState(false)
@@ -615,46 +615,6 @@ export default function ScheduleBuilder() {
     else setSelectedIds(new Set(geocodedClients.map(c => c.id)))
   }
 
-  const _handleImportJSON = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (!file) return
-    _setImporting(true)
-    try {
-      const text = await file.text()
-      const data = JSON.parse(text) as {
-        name?: string
-        clients: Array<{ name: string; address: string; lat?: number; lng?: number; phone?: string }>
-      }
-      if (!data.clients || !Array.isArray(data.clients)) {
-        alert('Invalid JSON: expected { clients: [...] }')
-        return
-      }
-      const newIds: string[] = []
-      for (const c of data.clients) {
-        if (!c.name || !c.address) continue
-        const coords = c.lat != null && c.lng != null ? { lat: c.lat, lng: c.lng } : null
-        const id = await store.addClient(c.name, c.address, coords, c.phone)
-        if (id) {
-          newIds.push(id)
-          recurrenceMap.set(id, 'biweekly')
-          durationMap.set(id, 60)
-        }
-      }
-      setSelectedIds(prev => {
-        const next = new Set(prev)
-        newIds.forEach(id => next.add(id))
-        return next
-      })
-      setRecurrenceMap(new Map(recurrenceMap))
-      setDurationMap(new Map(durationMap))
-      alert(`Imported ${newIds.length} clients from "${data.name || file.name}"`)
-    } catch (err) {
-      alert(`Import failed: ${err instanceof Error ? err.message : String(err)}`)
-    } finally {
-      _setImporting(false)
-      if (fileInputRef.current) fileInputRef.current.value = ''
-    }
-  }
 
   const applyAllRecurrence = () => {
     setRecurrenceMap(prev => {
