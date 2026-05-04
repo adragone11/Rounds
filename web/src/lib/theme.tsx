@@ -51,49 +51,21 @@ function applyToDocument(theme: Theme) {
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>(() => readStored() ?? detectDefault())
+  // Force light mode only for Rounds beta
+  const [theme, setThemeState] = useState<Theme>('light')
 
   // Apply on mount + on every theme change.
   useEffect(() => {
     applyToDocument(theme)
   }, [theme])
 
-  // Follow OS preference when the user hasn't chosen manually.
-  useEffect(() => {
-    if (readStored()) return
-    if (typeof window === 'undefined' || !window.matchMedia) return
-    const mq = window.matchMedia('(prefers-color-scheme: dark)')
-    const onChange = () => {
-      if (!readStored()) setThemeState(mq.matches ? 'dark' : 'light')
-    }
-    mq.addEventListener('change', onChange)
-    return () => mq.removeEventListener('change', onChange)
-  }, [])
+  // OS preference listener disabled for Rounds beta (light mode only)
 
-  // Keep multiple tabs in sync.
-  useEffect(() => {
-    const onStorage = (e: StorageEvent) => {
-      if (e.key !== THEME_KEY) return
-      if (e.newValue === 'light' || e.newValue === 'dark') {
-        setThemeState(e.newValue)
-      }
-    }
-    window.addEventListener('storage', onStorage)
-    return () => window.removeEventListener('storage', onStorage)
-  }, [])
+  // Storage sync disabled for Rounds beta (light mode only)
 
-  const setTheme = useCallback((next: Theme) => {
-    try { localStorage.setItem(THEME_KEY, next) } catch { /* noop */ }
-    setThemeState(next)
-  }, [])
-
-  const toggle = useCallback(() => {
-    setThemeState(prev => {
-      const next: Theme = prev === 'dark' ? 'light' : 'dark'
-      try { localStorage.setItem(THEME_KEY, next) } catch { /* noop */ }
-      return next
-    })
-  }, [])
+  // Disabled for Rounds beta (light mode only)
+  const setTheme = useCallback((_next: Theme) => {}, [])
+  const toggle = useCallback(() => {}, [])
 
   const value = useMemo(() => ({ theme, setTheme, toggle }), [theme, setTheme, toggle])
 
