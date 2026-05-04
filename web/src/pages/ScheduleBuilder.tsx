@@ -1864,32 +1864,7 @@ export default function ScheduleBuilder() {
                     Clients ({selectedIds.size}/{geocodedClients.length})
                   </label>
                   <div className="flex items-center gap-2">
-                    <input
-                      ref={fileInputRef}
-                      type="file"
-                      accept=".json"
-                      onChange={handleImportJSON}
-                      className="hidden"
-                    />
-                    <button
-                      onClick={() => fileInputRef.current?.click()}
-                      disabled={importing}
-                      className="text-xs font-medium text-blue-600 hover:text-blue-800 disabled:opacity-50 flex items-center gap-1"
-                    >
-                      {importing ? (
-                        <>
-                          <div className="w-3 h-3 border-2 border-blue-300 border-t-blue-600 rounded-full animate-spin" />
-                          Importing…
-                        </>
-                      ) : (
-                        <>
-                          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-                          </svg>
-                          Import JSON
-                        </>
-                      )}
-                    </button>
+                    {/* Import JSON hidden for Rounds beta */}
                     {geocodedClients.length > 0 && (
                       <button onClick={toggleAll} className="text-xs font-medium text-purple-600 hover:text-purple-800">
                         {allSelected ? 'Deselect All' : 'Select All'}
