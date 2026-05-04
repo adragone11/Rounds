@@ -1,0 +1,26 @@
+{
+  "name": "Dense Week - Boston Area",
+  "description": "20 clients clustered in Boston metro area for testing busy schedule scenarios",
+  "clients": [
+    { "name": "Alice Chen", "address": "123 Beacon St, Boston, MA 02108", "lat": 42.3554, "lng": -71.0701 },
+    { "name": "Bob Martinez", "address": "456 Commonwealth Ave, Boston, MA 02215", "lat": 42.3505, "lng": -71.1054 },
+    { "name": "Carol Williams", "address": "789 Boylston St, Boston, MA 02116", "lat": 42.3495, "lng": -71.0786 },
+    { "name": "David Lee", "address": "321 Newbury St, Boston, MA 02115", "lat": 42.3510, "lng": -71.0867 },
+    { "name": "Emma Johnson", "address": "654 Huntington Ave, Boston, MA 02115", "lat": 42.3374, "lng": -71.0956 },
+    { "name": "Frank Brown", "address": "987 Mass Ave, Cambridge, MA 02139", "lat": 42.3651, "lng": -71.1045 },
+    { "name": "Grace Kim", "address": "147 Harvard St, Brookline, MA 02446", "lat": 42.3426, "lng": -71.1212 },
+    { "name": "Henry Davis", "address": "258 Washington St, Brookline, MA 02445", "lat": 42.3318, "lng": -71.1246 },
+    { "name": "Iris Patel", "address": "369 Centre St, Jamaica Plain, MA 02130", "lat": 42.3098, "lng": -71.1145 },
+    { "name": "Jack Thompson", "address": "741 Tremont St, Boston, MA 02118", "lat": 42.3386, "lng": -71.0734 },
+    { "name": "Kate Wilson", "address": "852 Columbus Ave, Boston, MA 02120", "lat": 42.3312, "lng": -71.0845 },
+    { "name": "Leo Garcia", "address": "963 Blue Hill Ave, Dorchester, MA 02124", "lat": 42.2876, "lng": -71.0734 },
+    { "name": "Mia Robinson", "address": "159 Broadway, Somerville, MA 02145", "lat": 42.3954, "lng": -71.0987 },
+    { "name": "Noah Clark", "address": "267 Main St, Watertown, MA 02472", "lat": 42.3654, "lng": -71.1856 },
+    { "name": "Olivia Turner", "address": "348 Moody St, Waltham, MA 02453", "lat": 42.3765, "lng": -71.2345 },
+    { "name": "Peter Adams", "address": "456 Trapelo Rd, Belmont, MA 02478", "lat": 42.3912, "lng": -71.1789 },
+    { "name": "Quinn Scott", "address": "567 Highland Ave, Needham, MA 02494", "lat": 42.2834, "lng": -71.2312 },
+    { "name": "Rachel White", "address": "678 Walnut St, Newton, MA 02460", "lat": 42.3345, "lng": -71.2089 },
+    { "name": "Sam Mitchell", "address": "789 Beacon St, Newton, MA 02459", "lat": 42.3256, "lng": -71.1956 },
+    { "name": "Tina Brooks", "address": "891 Centre St, Newton, MA 02458", "lat": 42.3512, "lng": -71.1923 }
+  ]
+}

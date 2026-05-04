@@ -1,0 +1,12 @@
+{
+  "name": "Sparse Week - Scattered",
+  "description": "6 clients spread across wider area for testing light schedule scenarios",
+  "clients": [
+    { "name": "Anna Foster", "address": "100 Federal St, Boston, MA 02110", "lat": 42.3551, "lng": -71.0565 },
+    { "name": "Ben Howard", "address": "500 Memorial Dr, Cambridge, MA 02139", "lat": 42.3598, "lng": -71.0945 },
+    { "name": "Chloe Reed", "address": "200 Walnut St, Wellesley, MA 02481", "lat": 42.2967, "lng": -71.2923 },
+    { "name": "Derek Stone", "address": "75 Main St, Concord, MA 01742", "lat": 42.4595, "lng": -71.3489 },
+    { "name": "Eva Price", "address": "150 Washington St, Quincy, MA 02169", "lat": 42.2523, "lng": -71.0023 },
+    { "name": "Felix Grant", "address": "300 Essex St, Salem, MA 01970", "lat": 42.5212, "lng": -70.8967 }
+  ]
+}

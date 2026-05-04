@@ -1,0 +1,16 @@
+{
+  "name": "Edge Cases - Mixed Scenarios",
+  "description": "10 clients with varying situations: clusters, outliers, and mid-range",
+  "clients": [
+    { "name": "Tight Cluster A", "address": "1 Charles St, Boston, MA 02114", "lat": 42.3588, "lng": -71.0707 },
+    { "name": "Tight Cluster B", "address": "10 Charles St, Boston, MA 02114", "lat": 42.3591, "lng": -71.0712 },
+    { "name": "Tight Cluster C", "address": "20 Charles St, Boston, MA 02114", "lat": 42.3594, "lng": -71.0718 },
+    { "name": "Far Outlier North", "address": "50 Main St, Andover, MA 01810", "lat": 42.6584, "lng": -71.1370 },
+    { "name": "Far Outlier South", "address": "100 Main St, Plymouth, MA 02360", "lat": 41.9584, "lng": -70.6673 },
+    { "name": "Mid Range West", "address": "200 Worcester Rd, Framingham, MA 01701", "lat": 42.2979, "lng": -71.4162 },
+    { "name": "Mid Range East", "address": "50 Water St, Hingham, MA 02043", "lat": 42.2418, "lng": -70.8898 },
+    { "name": "Downtown Core 1", "address": "100 Summer St, Boston, MA 02110", "lat": 42.3534, "lng": -71.0567 },
+    { "name": "Downtown Core 2", "address": "200 State St, Boston, MA 02109", "lat": 42.3589, "lng": -71.0512 },
+    { "name": "Cambridge Bridge", "address": "1 Main St, Cambridge, MA 02142", "lat": 42.3623, "lng": -71.0823 }
+  ]
+}

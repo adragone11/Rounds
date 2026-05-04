@@ -1,0 +1,62 @@
+{
+  "name": "Massachusetts Wide - 50 Clients",
+  "description": "50 clients spread across all of Massachusetts: Boston metro, North Shore, South Shore, Cape, Central MA, and Western MA",
+  "clients": [
+    { "name": "Boston Downtown 1", "address": "100 Federal St, Boston, MA 02110", "lat": 42.3551, "lng": -71.0565 },
+    { "name": "Boston Downtown 2", "address": "200 State St, Boston, MA 02109", "lat": 42.3589, "lng": -71.0512 },
+    { "name": "Back Bay 1", "address": "123 Newbury St, Boston, MA 02116", "lat": 42.3510, "lng": -71.0780 },
+    { "name": "Back Bay 2", "address": "300 Boylston St, Boston, MA 02116", "lat": 42.3520, "lng": -71.0730 },
+    { "name": "South End", "address": "500 Tremont St, Boston, MA 02118", "lat": 42.3420, "lng": -71.0710 },
+    { "name": "Beacon Hill", "address": "50 Charles St, Boston, MA 02114", "lat": 42.3588, "lng": -71.0707 },
+    { "name": "Cambridge Central", "address": "100 Mass Ave, Cambridge, MA 02139", "lat": 42.3601, "lng": -71.0942 },
+    { "name": "Cambridge Harvard Sq", "address": "1 Harvard Sq, Cambridge, MA 02138", "lat": 42.3736, "lng": -71.1190 },
+    { "name": "Somerville Davis Sq", "address": "400 Highland Ave, Somerville, MA 02144", "lat": 42.3967, "lng": -71.1220 },
+    { "name": "Brookline Coolidge", "address": "300 Harvard St, Brookline, MA 02446", "lat": 42.3418, "lng": -71.1212 },
+
+    { "name": "Newton Centre", "address": "100 Centre St, Newton, MA 02459", "lat": 42.3312, "lng": -71.1923 },
+    { "name": "Newton Highlands", "address": "50 Lincoln St, Newton Highlands, MA 02461", "lat": 42.3189, "lng": -71.2067 },
+    { "name": "Wellesley Hills", "address": "200 Linden St, Wellesley, MA 02481", "lat": 42.3101, "lng": -71.2756 },
+    { "name": "Needham Center", "address": "100 Chapel St, Needham, MA 02492", "lat": 42.2834, "lng": -71.2334 },
+    { "name": "Dedham", "address": "600 High St, Dedham, MA 02026", "lat": 42.2418, "lng": -71.1662 },
+
+    { "name": "Salem Downtown", "address": "100 Essex St, Salem, MA 01970", "lat": 42.5212, "lng": -70.8967 },
+    { "name": "Marblehead", "address": "50 Atlantic Ave, Marblehead, MA 01945", "lat": 42.5001, "lng": -70.8578 },
+    { "name": "Beverly", "address": "200 Cabot St, Beverly, MA 01915", "lat": 42.5584, "lng": -70.8800 },
+    { "name": "Gloucester", "address": "100 Main St, Gloucester, MA 01930", "lat": 42.6159, "lng": -70.6623 },
+    { "name": "Newburyport", "address": "50 State St, Newburyport, MA 01950", "lat": 42.8126, "lng": -70.8773 },
+    { "name": "Amesbury", "address": "100 Main St, Amesbury, MA 01913", "lat": 42.8584, "lng": -70.9300 },
+    { "name": "Haverhill", "address": "200 Merrimack St, Haverhill, MA 01830", "lat": 42.7762, "lng": -71.0773 },
+    { "name": "Lawrence", "address": "300 Essex St, Lawrence, MA 01840", "lat": 42.7070, "lng": -71.1631 },
+    { "name": "Andover", "address": "100 Main St, Andover, MA 01810", "lat": 42.6584, "lng": -71.1370 },
+    { "name": "Lowell Downtown", "address": "50 Merrimack St, Lowell, MA 01852", "lat": 42.6334, "lng": -71.3162 },
+
+    { "name": "Quincy Center", "address": "100 Hancock St, Quincy, MA 02169", "lat": 42.2523, "lng": -71.0023 },
+    { "name": "Braintree", "address": "200 Washington St, Braintree, MA 02184", "lat": 42.2076, "lng": -71.0012 },
+    { "name": "Weymouth", "address": "300 Main St, Weymouth, MA 02188", "lat": 42.2212, "lng": -70.9398 },
+    { "name": "Hingham", "address": "100 Main St, Hingham, MA 02043", "lat": 42.2418, "lng": -70.8898 },
+    { "name": "Cohasset", "address": "50 South Main St, Cohasset, MA 02025", "lat": 42.2418, "lng": -70.8045 },
+    { "name": "Scituate", "address": "100 Front St, Scituate, MA 02066", "lat": 42.1993, "lng": -70.7256 },
+    { "name": "Plymouth Downtown", "address": "50 Court St, Plymouth, MA 02360", "lat": 41.9584, "lng": -70.6673 },
+    { "name": "Duxbury", "address": "100 Washington St, Duxbury, MA 02332", "lat": 42.0418, "lng": -70.6723 },
+    { "name": "Marshfield", "address": "200 Ocean St, Marshfield, MA 02050", "lat": 42.0918, "lng": -70.7012 },
+    { "name": "Brockton", "address": "100 Main St, Brockton, MA 02301", "lat": 42.0834, "lng": -71.0184 },
+
+    { "name": "Framingham Centre", "address": "100 Concord St, Framingham, MA 01702", "lat": 42.2979, "lng": -71.4162 },
+    { "name": "Natick Center", "address": "50 Main St, Natick, MA 01760", "lat": 42.2834, "lng": -71.3467 },
+    { "name": "Worcester Downtown", "address": "100 Main St, Worcester, MA 01608", "lat": 42.2626, "lng": -71.8023 },
+    { "name": "Worcester West", "address": "500 Park Ave, Worcester, MA 01610", "lat": 42.2712, "lng": -71.8234 },
+    { "name": "Shrewsbury", "address": "100 Main St, Shrewsbury, MA 01545", "lat": 42.2959, "lng": -71.7134 },
+    { "name": "Marlborough", "address": "200 Main St, Marlborough, MA 01752", "lat": 42.3459, "lng": -71.5523 },
+
+    { "name": "Hyannis", "address": "100 Main St, Hyannis, MA 02601", "lat": 41.6529, "lng": -70.2834 },
+    { "name": "Falmouth", "address": "50 Main St, Falmouth, MA 02540", "lat": 41.5512, "lng": -70.6145 },
+    { "name": "Sandwich", "address": "100 Main St, Sandwich, MA 02563", "lat": 41.7584, "lng": -70.4934 },
+    { "name": "Barnstable", "address": "200 Main St, Barnstable, MA 02630", "lat": 41.7001, "lng": -70.3001 },
+
+    { "name": "Springfield Downtown", "address": "100 Main St, Springfield, MA 01103", "lat": 42.1015, "lng": -72.5898 },
+    { "name": "Northampton", "address": "50 Main St, Northampton, MA 01060", "lat": 42.3168, "lng": -72.6312 },
+    { "name": "Amherst", "address": "100 N Pleasant St, Amherst, MA 01002", "lat": 42.3751, "lng": -72.5198 },
+    { "name": "Pittsfield", "address": "100 North St, Pittsfield, MA 01201", "lat": 42.4501, "lng": -73.2454 },
+    { "name": "Great Barrington", "address": "50 Main St, Great Barrington, MA 01230", "lat": 42.1959, "lng": -73.3623 }
+  ]
+}
